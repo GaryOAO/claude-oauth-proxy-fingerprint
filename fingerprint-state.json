@@ -1,0 +1,19 @@
+{
+  "schema": "claude-oauth-proxy.fingerprint-state.v1",
+  "updated_at": "2026-05-21T23:03:33Z",
+  "source": {
+    "version": "2.1.148",
+    "target": "darwin-arm64",
+    "platform_package": "@anthropic-ai/claude-code-darwin-arm64",
+    "build_time": "2026-05-21T23:03:33Z"
+  },
+  "client_fingerprint": {
+    "cc_version": "2.1.148",
+    "user_agent": "claude-cli/2.1.148 (external, cli)",
+    "stainless_os": "MacOS",
+    "stainless_arch": "arm64",
+    "stainless_runtime": "node",
+    "stainless_runtime_version": "v24.3.0",
+    "stainless_package_version": "0.94.0"
+  }
+}
