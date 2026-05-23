@@ -1,19 +1,52 @@
 {
   "schema": "claude-oauth-proxy.fingerprint-state.v1",
-  "updated_at": "2026-05-21T23:03:33Z",
+  "updated_at": "2026-05-23T03:17:26.327Z",
   "source": {
-    "version": "2.1.148",
+    "version": "2.1.149",
     "target": "darwin-arm64",
     "platform_package": "@anthropic-ai/claude-code-darwin-arm64",
-    "build_time": "2026-05-21T23:03:33Z"
+    "build_time": "2026-05-22T15:26:46Z"
   },
   "client_fingerprint": {
-    "cc_version": "2.1.148",
-    "user_agent": "claude-cli/2.1.148 (external, cli)",
+    "cc_version": "2.1.149",
+    "user_agent": "claude-cli/2.1.149 (external, cli)",
     "stainless_os": "MacOS",
     "stainless_arch": "arm64",
     "stainless_runtime": "node",
     "stainless_runtime_version": "v24.3.0",
     "stainless_package_version": "0.94.0"
+  },
+  "request_headers": {
+    "v1_messages_create": {
+      "Accept": "application/json",
+      "User-Agent": "claude-cli/2.1.149 (external, cli)",
+      "x-app": "cli",
+      "X-Stainless-Lang": "js",
+      "X-Stainless-OS": "MacOS",
+      "X-Stainless-Arch": "arm64",
+      "X-Stainless-Runtime": "node",
+      "X-Stainless-Runtime-Version": "v24.3.0",
+      "X-Stainless-Package-Version": "0.94.0",
+      "X-Stainless-Retry-Count": "0",
+      "X-Stainless-Timeout": "600",
+      "anthropic-version": "2023-06-01"
+    },
+    "v1_messages_stream": {
+      "Accept": "application/json",
+      "User-Agent": "claude-cli/2.1.149 (external, cli)",
+      "x-app": "cli",
+      "X-Stainless-Lang": "js",
+      "X-Stainless-OS": "MacOS",
+      "X-Stainless-Arch": "arm64",
+      "X-Stainless-Runtime": "node",
+      "X-Stainless-Runtime-Version": "v24.3.0",
+      "X-Stainless-Package-Version": "0.94.0",
+      "X-Stainless-Retry-Count": "0",
+      "X-Stainless-Timeout": "600",
+      "anthropic-version": "2023-06-01",
+      "X-Stainless-Helper-Method": "stream"
+    },
+    "compat_system_prompt_billing_line": "x-anthropic-billing-header: cc_version=2.1.149; cc_entrypoint=cli; cch=00000;",
+    "plan_usage_user_agent": "claude-code/2.1.149"
   }
 }
