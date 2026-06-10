@@ -1,15 +1,15 @@
 {
   "schema": "claude-oauth-proxy.fingerprint-state.v1",
-  "updated_at": "2026-06-09T05:50:44.710Z",
+  "updated_at": "2026-06-10T05:55:25.018Z",
   "source": {
-    "version": "2.1.169",
+    "version": "2.1.170",
     "target": "darwin-arm64",
     "platform_package": "@anthropic-ai/claude-code-darwin-arm64",
-    "build_time": "2026-06-08T03:22:12Z"
+    "build_time": "2026-06-09T15:09:09Z"
   },
   "client_fingerprint": {
-    "cc_version": "2.1.169",
-    "user_agent": "claude-cli/2.1.169 (external, cli)",
+    "cc_version": "2.1.170",
+    "user_agent": "claude-cli/2.1.170 (external, cli)",
     "stainless_os": "MacOS",
     "stainless_arch": "arm64",
     "stainless_runtime": "node",
@@ -19,7 +19,7 @@
   "request_headers": {
     "v1_messages_create": {
       "Accept": "application/json",
-      "User-Agent": "claude-cli/2.1.169 (external, cli)",
+      "User-Agent": "claude-cli/2.1.170 (external, cli)",
       "x-app": "cli",
       "X-Stainless-Lang": "js",
       "X-Stainless-OS": "MacOS",
@@ -33,7 +33,7 @@
     },
     "v1_messages_stream": {
       "Accept": "application/json",
-      "User-Agent": "claude-cli/2.1.169 (external, cli)",
+      "User-Agent": "claude-cli/2.1.170 (external, cli)",
       "x-app": "cli",
       "X-Stainless-Lang": "js",
       "X-Stainless-OS": "MacOS",
@@ -46,7 +46,7 @@
       "anthropic-version": "2023-06-01",
       "X-Stainless-Helper-Method": "stream"
     },
-    "compat_system_prompt_billing_line": "x-anthropic-billing-header: cc_version=2.1.169; cc_entrypoint=cli; cch=00000;",
-    "plan_usage_user_agent": "claude-code/2.1.169"
+    "compat_system_prompt_billing_line": "x-anthropic-billing-header: cc_version=2.1.170; cc_entrypoint=cli; cch=00000;",
+    "plan_usage_user_agent": "claude-code/2.1.170"
   }
 }
