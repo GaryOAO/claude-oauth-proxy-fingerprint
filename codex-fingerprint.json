@@ -1,0 +1,30 @@
+{
+  "schema": "claude-oauth-proxy.codex-fingerprint.v1",
+  "version": "0.144.5",
+  "checked_at": "2026-07-17T06:15:31.776Z",
+  "originator": "codex_cli_rs",
+  "originators_seen_in_binary": [
+    "codex_cli_rs",
+    "codex-tui",
+    "codex_vscode",
+    "codex_exec"
+  ],
+  "user_agent_template": "{}/{build_version} ({} {}; {}) {}",
+  "residency_header_name": "x-openai-internal-codex-residency",
+  "known_header_names": [
+    "originator",
+    "x-client-request-id",
+    "x-codex-beta-features",
+    "x-codex-installation-id",
+    "x-codex-parent-thread-id",
+    "x-codex-turn-metadata",
+    "x-codex-turn-state",
+    "x-codex-window-id",
+    "x-codex-ws-stream-request-start-ms",
+    "x-openai-internal-codex-residency",
+    "x-openai-internal-codex-responses-lite",
+    "x-openai-memgen-request",
+    "x-openai-subagent",
+    "x-responsesapi-include-timing-metrics"
+  ]
+}
