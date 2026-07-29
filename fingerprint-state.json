@@ -1,6 +1,6 @@
 {
   "schema": "claude-oauth-proxy.fingerprint-state.v1",
-  "updated_at": "2026-07-28T05:27:08.458Z",
+  "updated_at": "2026-07-29T05:31:32.501Z",
   "source": {
     "version": "2.1.220",
     "target": "darwin-arm64",
