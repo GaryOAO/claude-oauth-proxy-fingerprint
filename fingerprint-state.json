@@ -1,52 +1,52 @@
 {
   "schema": "claude-oauth-proxy.fingerprint-state.v1",
-  "updated_at": "2026-08-11T04:51:17.221Z",
+  "updated_at": "2026-08-12T05:01:32.537Z",
   "source": {
-    "version": "2.1.227",
+    "version": "2.1.228",
     "target": "darwin-arm64",
     "platform_package": "@anthropic-ai/claude-code-darwin-arm64",
-    "build_time": "2026-08-10T18:40:15Z"
+    "build_time": "2026-08-11T01:33:09Z"
   },
   "client_fingerprint": {
-    "cc_version": "2.1.227",
-    "user_agent": "claude-cli/2.1.227 (external, cli)",
+    "cc_version": "2.1.228",
+    "user_agent": "claude-cli/2.1.228 (external, cli)",
     "stainless_os": "MacOS",
     "stainless_arch": "arm64",
     "stainless_runtime": "node",
     "stainless_runtime_version": "v26.3.0",
-    "stainless_package_version": "0.94.0"
+    "stainless_package_version": "0.112.1"
   },
   "request_headers": {
     "v1_messages_create": {
       "Accept": "application/json",
-      "User-Agent": "claude-cli/2.1.227 (external, cli)",
+      "User-Agent": "claude-cli/2.1.228 (external, cli)",
       "x-app": "cli",
       "X-Stainless-Lang": "js",
       "X-Stainless-OS": "MacOS",
       "X-Stainless-Arch": "arm64",
       "X-Stainless-Runtime": "node",
       "X-Stainless-Runtime-Version": "v26.3.0",
-      "X-Stainless-Package-Version": "0.94.0",
+      "X-Stainless-Package-Version": "0.112.1",
       "X-Stainless-Retry-Count": "0",
       "X-Stainless-Timeout": "600",
       "anthropic-version": "2023-06-01"
     },
     "v1_messages_stream": {
       "Accept": "application/json",
-      "User-Agent": "claude-cli/2.1.227 (external, cli)",
+      "User-Agent": "claude-cli/2.1.228 (external, cli)",
       "x-app": "cli",
       "X-Stainless-Lang": "js",
       "X-Stainless-OS": "MacOS",
       "X-Stainless-Arch": "arm64",
       "X-Stainless-Runtime": "node",
       "X-Stainless-Runtime-Version": "v26.3.0",
-      "X-Stainless-Package-Version": "0.94.0",
+      "X-Stainless-Package-Version": "0.112.1",
       "X-Stainless-Retry-Count": "0",
       "X-Stainless-Timeout": "600",
       "anthropic-version": "2023-06-01",
       "X-Stainless-Helper-Method": "stream"
     },
-    "compat_system_prompt_billing_line": "x-anthropic-billing-header: cc_version=2.1.227; cc_entrypoint=cli; cch=00000;",
-    "plan_usage_user_agent": "claude-code/2.1.227"
+    "compat_system_prompt_billing_line": "x-anthropic-billing-header: cc_version=2.1.228; cc_entrypoint=cli; cch=00000;",
+    "plan_usage_user_agent": "claude-code/2.1.228"
   }
 }
