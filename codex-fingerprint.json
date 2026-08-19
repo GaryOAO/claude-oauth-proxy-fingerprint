@@ -1,7 +1,7 @@
 {
   "schema": "claude-oauth-proxy.codex-fingerprint.v1",
-  "version": "0.147.0",
-  "checked_at": "2026-08-07T05:12:12.684Z",
+  "version": "0.148.0",
+  "checked_at": "2026-08-19T04:50:05.739Z",
   "originator": "codex_cli_rs",
   "originators_seen_in_binary": [
     "codex_cli_rs",
@@ -17,6 +17,7 @@
     "x-codex-beta-features",
     "x-codex-installation-id",
     "x-codex-parent-thread-id",
+    "x-codex-routing-hint",
     "x-codex-turn-metadata",
     "x-codex-turn-state",
     "x-codex-window-id",
