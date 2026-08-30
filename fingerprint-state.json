@@ -1,39 +1,137 @@
 {
   "schema": "claude-oauth-proxy.fingerprint-state.v1",
-  "updated_at": "2026-08-30T04:32:32.395Z",
+  "updated_at": "2026-08-30T07:12:51.395Z",
   "source": {
     "version": "2.1.251",
     "target": "darwin-arm64",
     "platform_package": "@anthropic-ai/claude-code-darwin-arm64",
-    "build_time": "2026-08-28T14:51:38Z"
+    "build_time": "2026-08-28T14:51:38Z",
+    "npm_integrity": "sha512-Qr5oMGVrOUyatsMlK0361OSnr3C785QBFIDoaiHMpaJ/nu/Ji2ccwI7nv0o54q3v3Y+zU9xbtEmcGxPRcR9ptA==",
+    "npm_shasum": "9db599836f67c378870c44e37ee4546e2dbcfb7a",
+    "tarball_sha256": "cb3ecffa649ea20b78f3b7fe4a7395d7a225a510ae18521f6b65c669ecf4d9fd",
+    "binary_sha256": "625869b01e0050f260b2980fac248fd9cef9e462612bded4ec9d3d49ff8969a5",
+    "codesign_authority": "Developer ID Application: Anthropic PBC (Q6L2SF6YDW)",
+    "codesign_team_identifier": "Q6L2SF6YDW"
   },
   "client_fingerprint": {
     "cc_version": "2.1.251",
-    "user_agent": "claude-cli/2.1.251 (external, cli)",
+    "user_agent": "claude-cli/2.1.251 (external, sdk-cli)",
     "stainless_os": "MacOS",
     "stainless_arch": "arm64",
     "stainless_runtime": "node",
     "stainless_runtime_version": "v26.3.0",
     "stainless_package_version": "0.112.1"
   },
+  "oauth_contract": {
+    "authorize_url": "https://claude.com/cai/oauth/authorize",
+    "token_url": "https://platform.claude.com/v1/oauth/token",
+    "manual_redirect_url": "https://platform.claude.com/oauth/code/callback",
+    "client_id": "9d1c250a-e61b-44d9-88ed-5944d1962f5e",
+    "subscription_scopes": [
+      "user:profile",
+      "user:inference",
+      "user:sessions:claude_code",
+      "user:mcp_servers",
+      "user:file_upload"
+    ],
+    "message_betas": [
+      "claude-code-20250219",
+      "oauth-2025-04-20",
+      "interleaved-thinking-2025-05-14",
+      "thinking-token-count-2026-05-13",
+      "context-management-2025-06-27",
+      "prompt-caching-scope-2026-01-05",
+      "effort-2025-11-24",
+      "extended-cache-ttl-2025-04-11"
+    ],
+    "message_header_names": [
+      "accept",
+      "anthropic-beta",
+      "anthropic-dangerous-direct-browser-access",
+      "anthropic-version",
+      "content-type",
+      "user-agent",
+      "x-app",
+      "x-claude-code-session-id",
+      "x-stainless-arch",
+      "x-stainless-lang",
+      "x-stainless-os",
+      "x-stainless-package-version",
+      "x-stainless-retry-count",
+      "x-stainless-runtime",
+      "x-stainless-runtime-version",
+      "x-stainless-timeout"
+    ],
+    "conditional_header_names": [
+      "x-client-request-id",
+      "x-cc-atis",
+      "anthropic-dispatch-id"
+    ],
+    "token_requests": {
+      "authorization_code": {
+        "method": "POST",
+        "url": "https://platform.claude.com/v1/oauth/token",
+        "explicit_header_names": [
+          "content-type"
+        ],
+        "content_type": "application/json",
+        "timeout_ms": 30000,
+        "browser_spoof_headers_absent": true,
+        "authorization_header_absent": true,
+        "oauth_beta_header_absent": true
+      },
+      "refresh_token": {
+        "method": "POST",
+        "url": "https://platform.claude.com/v1/oauth/token",
+        "explicit_header_names": [
+          "content-type"
+        ],
+        "content_type": "application/json",
+        "timeout_ms": 30000,
+        "abort_signal_supported": true,
+        "browser_spoof_headers_absent": true,
+        "authorization_header_absent": true,
+        "oauth_beta_header_absent": true
+      },
+      "transport_defaults_intentionally_not_pinned": true
+    }
+  },
+  "privacy_contract": {
+    "proxy_block_paths": [
+      "/api/event_logging/v2/batch"
+    ],
+    "direct_error_reporting_urls": [
+      "https://browser-intake-us5-datadoghq.com/api/v2/logs",
+      "https://http-intake.logs.us5.datadoghq.com/api/v2/logs"
+    ],
+    "direct_nonessential_urls": [
+      "https://api.anthropic.com/api/eval/sdk-zAZezfDKGoZuXXKe",
+      "https://api.anthropic.com/api/eval-authed/sdk-zAZezfDKGoZuXXKe"
+    ],
+    "first_party_export_routing": "direct_api_anthropic_com_unless_official_staging",
+    "proxy_blocking_is_defensive_only": true,
+    "client_disable_env": [
+      "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC",
+      "DISABLE_TELEMETRY",
+      "DO_NOT_TRACK",
+      "DISABLE_ERROR_REPORTING",
+      "DISABLE_GROWTHBOOK",
+      "DISABLE_FEEDBACK_COMMAND",
+      "CLAUDE_CODE_DISABLE_FEEDBACK_SURVEY"
+    ],
+    "client_force_disabled_exporters": {
+      "OTEL_METRICS_EXPORTER": "none",
+      "OTEL_LOGS_EXPORTER": "none",
+      "OTEL_TRACES_EXPORTER": "none"
+    },
+    "client_unset_env": [
+      "CLAUDE_CODE_ENABLE_TELEMETRY"
+    ]
+  },
   "request_headers": {
     "v1_messages_create": {
       "Accept": "application/json",
-      "User-Agent": "claude-cli/2.1.251 (external, cli)",
-      "x-app": "cli",
-      "X-Stainless-Lang": "js",
-      "X-Stainless-OS": "MacOS",
-      "X-Stainless-Arch": "arm64",
-      "X-Stainless-Runtime": "node",
-      "X-Stainless-Runtime-Version": "v26.3.0",
-      "X-Stainless-Package-Version": "0.112.1",
-      "X-Stainless-Retry-Count": "0",
-      "X-Stainless-Timeout": "600",
-      "anthropic-version": "2023-06-01"
-    },
-    "v1_messages_stream": {
-      "Accept": "application/json",
-      "User-Agent": "claude-cli/2.1.251 (external, cli)",
+      "User-Agent": "claude-cli/2.1.251 (external, sdk-cli)",
       "x-app": "cli",
       "X-Stainless-Lang": "js",
       "X-Stainless-OS": "MacOS",
@@ -44,7 +142,29 @@
       "X-Stainless-Retry-Count": "0",
       "X-Stainless-Timeout": "600",
       "anthropic-version": "2023-06-01",
-      "X-Stainless-Helper-Method": "stream"
+      "anthropic-dangerous-direct-browser-access": "true",
+      "anthropic-beta": "claude-code-20250219,oauth-2025-04-20,interleaved-thinking-2025-05-14,thinking-token-count-2026-05-13,context-management-2025-06-27,prompt-caching-scope-2026-01-05,effort-2025-11-24,extended-cache-ttl-2025-04-11"
+    },
+    "v1_messages_stream": {
+      "Accept": "application/json",
+      "User-Agent": "claude-cli/2.1.251 (external, sdk-cli)",
+      "x-app": "cli",
+      "X-Stainless-Lang": "js",
+      "X-Stainless-OS": "MacOS",
+      "X-Stainless-Arch": "arm64",
+      "X-Stainless-Runtime": "node",
+      "X-Stainless-Runtime-Version": "v26.3.0",
+      "X-Stainless-Package-Version": "0.112.1",
+      "X-Stainless-Retry-Count": "0",
+      "X-Stainless-Timeout": "600",
+      "anthropic-version": "2023-06-01",
+      "anthropic-dangerous-direct-browser-access": "true",
+      "anthropic-beta": "claude-code-20250219,oauth-2025-04-20,interleaved-thinking-2025-05-14,thinking-token-count-2026-05-13,context-management-2025-06-27,prompt-caching-scope-2026-01-05,effort-2025-11-24,extended-cache-ttl-2025-04-11"
+    },
+    "canonical_only_headers": {
+      "x-client-request-id": "{uuid}",
+      "x-cc-atis": "{opaque_bootstrap_token_when_present}",
+      "anthropic-dispatch-id": "{server_dispatch_id_when_present}"
     },
     "compat_system_prompt_billing_line": "x-anthropic-billing-header: cc_version=2.1.251; cc_entrypoint=cli; cch=00000;",
     "plan_usage_user_agent": "claude-code/2.1.251"

@@ -1,0 +1,305 @@
+{
+  "schema_version": 1,
+  "ok": true,
+  "audit_mode": "subscription_oauth_fake_fixture",
+  "artifact": {
+    "package": "@anthropic-ai/claude-code-darwin-arm64",
+    "requested_version": "2.1.251",
+    "resolved_version": "2.1.251",
+    "npm_integrity": "sha512-Qr5oMGVrOUyatsMlK0361OSnr3C785QBFIDoaiHMpaJ/nu/Ji2ccwI7nv0o54q3v3Y+zU9xbtEmcGxPRcR9ptA==",
+    "npm_shasum": "9db599836f67c378870c44e37ee4546e2dbcfb7a",
+    "tarball_sha256": "cb3ecffa649ea20b78f3b7fe4a7395d7a225a510ae18521f6b65c669ecf4d9fd",
+    "binary_sha256": "625869b01e0050f260b2980fac248fd9cef9e462612bded4ec9d3d49ff8969a5",
+    "codesign_authority": "Developer ID Application: Anthropic PBC (Q6L2SF6YDW)",
+    "codesign_team_identifier": "Q6L2SF6YDW",
+    "platform": "darwin",
+    "arch": "arm64"
+  },
+  "oauth_contract": {
+    "authorize_url": "https://claude.com/cai/oauth/authorize",
+    "token_url": "https://platform.claude.com/v1/oauth/token",
+    "manual_redirect_url": "https://platform.claude.com/oauth/code/callback",
+    "client_id": "9d1c250a-e61b-44d9-88ed-5944d1962f5e",
+    "subscription_scopes": [
+      "user:profile",
+      "user:inference",
+      "user:sessions:claude_code",
+      "user:mcp_servers",
+      "user:file_upload"
+    ]
+  },
+  "privacy_contract": {
+    "proxy_block_paths": [
+      "/api/event_logging/v2/batch"
+    ],
+    "direct_error_reporting_urls": [
+      "https://browser-intake-us5-datadoghq.com/api/v2/logs",
+      "https://http-intake.logs.us5.datadoghq.com/api/v2/logs"
+    ],
+    "direct_nonessential_urls": [
+      "https://api.anthropic.com/api/eval/sdk-zAZezfDKGoZuXXKe",
+      "https://api.anthropic.com/api/eval-authed/sdk-zAZezfDKGoZuXXKe"
+    ],
+    "first_party_export_routing": "direct_api_anthropic_com_unless_official_staging",
+    "proxy_blocking_is_defensive_only": true,
+    "client_disable_env": [
+      "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC",
+      "DISABLE_TELEMETRY",
+      "DO_NOT_TRACK",
+      "DISABLE_ERROR_REPORTING",
+      "DISABLE_GROWTHBOOK",
+      "DISABLE_FEEDBACK_COMMAND",
+      "CLAUDE_CODE_DISABLE_FEEDBACK_SURVEY"
+    ],
+    "client_force_disabled_exporters": {
+      "OTEL_METRICS_EXPORTER": "none",
+      "OTEL_LOGS_EXPORTER": "none",
+      "OTEL_TRACES_EXPORTER": "none"
+    },
+    "client_unset_env": [
+      "CLAUDE_CODE_ENABLE_TELEMETRY"
+    ]
+  },
+  "static": {
+    "canonical_headers": {
+      "x_client_request_id": {
+        "literal_present": true,
+        "conditional_injection_present": true
+      },
+      "x_cc_atis": {
+        "literal_present": true,
+        "bootstrap_value_reader_present": true,
+        "conditional_injection_present": true
+      },
+      "x_cc_atis_current": {
+        "literal_present": true,
+        "response_reader_present": true,
+        "bootstrap_refetch_present": true
+      },
+      "anthropic_dispatch_id": {
+        "literal_present": true,
+        "main_request_injection_present": true,
+        "failure_retry_without_header_present": true
+      }
+    },
+    "oauth": {
+      "contract_extracted": true,
+      "authorize_endpoint_trusted": true,
+      "token_endpoint_trusted": true,
+      "redirect_endpoint_trusted": true,
+      "client_id_uuid": true,
+      "subscription_scopes_safe": true,
+      "authorization_code_json_post": true,
+      "refresh_token_json_post": true,
+      "token_requests": {
+        "authorization_code": {
+          "method": "POST",
+          "url": "https://platform.claude.com/v1/oauth/token",
+          "explicit_header_names": [
+            "content-type"
+          ],
+          "content_type": "application/json",
+          "timeout_ms": 30000,
+          "browser_spoof_headers_absent": true,
+          "authorization_header_absent": true,
+          "oauth_beta_header_absent": true
+        },
+        "refresh_token": {
+          "method": "POST",
+          "url": "https://platform.claude.com/v1/oauth/token",
+          "explicit_header_names": [
+            "content-type"
+          ],
+          "content_type": "application/json",
+          "timeout_ms": 30000,
+          "abort_signal_supported": true,
+          "browser_spoof_headers_absent": true,
+          "authorization_header_absent": true,
+          "oauth_beta_header_absent": true
+        },
+        "transport_defaults_intentionally_not_pinned": true
+      }
+    },
+    "privacy": {
+      "proxy_telemetry_paths_extracted": true,
+      "direct_error_reporting_endpoints_recognized": true,
+      "disable_nonessential_traffic_control_present": true,
+      "disable_telemetry_control_present": true,
+      "do_not_track_control_present": true,
+      "disable_error_reporting_control_present": true,
+      "disable_growthbook_control_present": true,
+      "disable_feedback_control_present": true,
+      "disable_feedback_survey_control_present": true,
+      "direct_nonessential_endpoints_recognized": true,
+      "known_kyc_vendor_endpoints_absent": true,
+      "active_geolocation_lookup_endpoints_absent": true,
+      "first_party_exporter_bypasses_custom_anthropic_base_url": true
+    }
+  },
+  "dynamic": {
+    "path": "/v1/messages?beta=true",
+    "method": "POST",
+    "header_names": [
+      "accept",
+      "anthropic-beta",
+      "anthropic-dangerous-direct-browser-access",
+      "anthropic-version",
+      "content-type",
+      "user-agent",
+      "x-app",
+      "x-claude-code-session-id",
+      "x-stainless-arch",
+      "x-stainless-lang",
+      "x-stainless-os",
+      "x-stainless-package-version",
+      "x-stainless-retry-count",
+      "x-stainless-runtime",
+      "x-stainless-runtime-version",
+      "x-stainless-timeout"
+    ],
+    "fingerprint": {
+      "user_agent": "claude-cli/2.1.251 (external, sdk-cli)",
+      "stainless": {
+        "arch": "arm64",
+        "lang": "js",
+        "os": "MacOS",
+        "package_version": "0.112.1",
+        "retry_count": "0",
+        "runtime": "node",
+        "runtime_version": "v26.3.0",
+        "timeout": "600"
+      },
+      "anthropic_version": "2023-06-01",
+      "x_app": "cli",
+      "browser_access": "true",
+      "helper_method_present": false
+    },
+    "betas": {
+      "required_prefixes": [
+        "claude-code-",
+        "oauth-"
+      ],
+      "observed_ordered": [
+        "claude-code-20250219",
+        "oauth-2025-04-20",
+        "interleaved-thinking-2025-05-14",
+        "thinking-token-count-2026-05-13",
+        "context-management-2025-06-27",
+        "prompt-caching-scope-2026-01-05",
+        "effort-2025-11-24",
+        "extended-cache-ttl-2025-04-11"
+      ],
+      "observed_sorted": [
+        "claude-code-20250219",
+        "context-management-2025-06-27",
+        "effort-2025-11-24",
+        "extended-cache-ttl-2025-04-11",
+        "interleaved-thinking-2025-05-14",
+        "oauth-2025-04-20",
+        "prompt-caching-scope-2026-01-05",
+        "thinking-token-count-2026-05-13"
+      ]
+    },
+    "body_shape": {
+      "top_level_keys": [
+        "context_management",
+        "max_tokens",
+        "messages",
+        "metadata",
+        "model",
+        "output_config",
+        "stream",
+        "system",
+        "thinking",
+        "tools"
+      ],
+      "model": "claude-sonnet-4-6",
+      "stream": true,
+      "system_block_count": 3,
+      "system_block_keys": [
+        [
+          "text",
+          "type"
+        ],
+        [
+          "cache_control",
+          "text",
+          "type"
+        ],
+        [
+          "cache_control",
+          "text",
+          "type"
+        ]
+      ],
+      "message_count": 1,
+      "message_keys": [
+        [
+          "content",
+          "role"
+        ]
+      ],
+      "metadata_keys": [
+        "user_id"
+      ],
+      "metadata_user_id_keys": [
+        "account_uuid",
+        "device_id",
+        "session_id"
+      ],
+      "tools_count": 0,
+      "thinking_keys": [
+        "display",
+        "type"
+      ],
+      "output_config_keys": [
+        "effort"
+      ],
+      "context_management_keys": [
+        "edits"
+      ],
+      "billing_system_block_present": true
+    },
+    "assertions": {
+      "cli_exit_zero": true,
+      "cli_fixture_result": true,
+      "hello_seen": true,
+      "exactly_one_messages_request": true,
+      "messages_method_post": true,
+      "oauth_authorization_used": true,
+      "api_key_absent": true,
+      "sdk_cli_user_agent": true,
+      "stainless_arch_arm64": true,
+      "stainless_lang_js": true,
+      "stainless_os_macos": true,
+      "stainless_package_version_present": true,
+      "stainless_runtime_node": true,
+      "stainless_runtime_version_present": true,
+      "stainless_retry_zero": true,
+      "stainless_timeout_present": true,
+      "required_beta_families_present": true,
+      "helper_method_absent": true,
+      "session_header_present": true,
+      "browser_access_header_true": true,
+      "x_app_cli": true,
+      "body_required_keys_present": true,
+      "body_stream_true": true,
+      "metadata_user_id_is_json_string": true,
+      "metadata_required_keys_present": true,
+      "billing_system_block_present": true,
+      "user_message_present": true
+    }
+  },
+  "safety": {
+    "real_credentials_read": false,
+    "token_fixture": "fake_non_secret",
+    "outbound_network": "sandbox_denied_except_127.0.0.1",
+    "telemetry_disabled": true,
+    "error_reporting_disabled": true,
+    "nonessential_traffic_disabled": true,
+    "explicit_otel_exporters_disabled": true,
+    "environment_allowlisted": true,
+    "repository_read_denied": true,
+    "repository_write_denied": true
+  }
+}
