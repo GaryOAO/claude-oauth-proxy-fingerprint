@@ -1,13 +1,10 @@
 {
   "schema": "claude-oauth-proxy.codex-fingerprint.v1",
-  "version": "0.151.0",
-  "checked_at": "2026-08-30T04:42:17.798Z",
+  "version": "0.152.0",
+  "checked_at": "2026-09-01T06:54:06.486Z",
   "originator": "codex_cli_rs",
   "originators_seen_in_binary": [
-    "codex_cli_rs",
-    "codex-tui",
-    "codex_vscode",
-    "codex_exec"
+    "codex_cli_rs"
   ],
   "user_agent_template": "{}/{build_version} ({} {}; {}) {}",
   "residency_header_name": "x-openai-internal-codex-residency",

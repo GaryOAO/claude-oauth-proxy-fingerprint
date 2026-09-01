@@ -1,0 +1,1328 @@
+{
+  "auth": {
+    "credentials": "synthetic-only",
+    "mode": "chatgpt",
+    "upstream_runtime_scope": "loopback-only"
+  },
+  "checks": [
+    {
+      "id": "fast.fake_account_only",
+      "passed": true
+    },
+    {
+      "id": "fast.fake_bearer_only",
+      "passed": true
+    },
+    {
+      "id": "image.fake_account_only",
+      "passed": true
+    },
+    {
+      "id": "image.fake_bearer_only",
+      "passed": true
+    },
+    {
+      "id": "images.body.gpt_image_2",
+      "passed": true
+    },
+    {
+      "id": "images.body.prompt",
+      "passed": true
+    },
+    {
+      "id": "images.captured",
+      "passed": true
+    },
+    {
+      "id": "images.header.authorization.present",
+      "passed": true
+    },
+    {
+      "id": "images.header.chatgpt-account-id.present",
+      "passed": true
+    },
+    {
+      "id": "images.header.openai-beta.absent",
+      "passed": true
+    },
+    {
+      "id": "images.header.originator.present",
+      "passed": true
+    },
+    {
+      "id": "images.header.session-id.absent",
+      "passed": true
+    },
+    {
+      "id": "images.header.thread-id.absent",
+      "passed": true
+    },
+    {
+      "id": "images.header.user-agent.present",
+      "passed": true
+    },
+    {
+      "id": "images.header.x-client-request-id.absent",
+      "passed": true
+    },
+    {
+      "id": "images.header.x-codex-image-turn-id.present",
+      "passed": true
+    },
+    {
+      "id": "images.header.x-codex-installation-id.absent",
+      "passed": true
+    },
+    {
+      "id": "images.header.x-codex-routing-hint.absent",
+      "passed": true
+    },
+    {
+      "id": "images.header.x-codex-turn-metadata.absent",
+      "passed": true
+    },
+    {
+      "id": "images.header.x-codex-window-id.absent",
+      "passed": true
+    },
+    {
+      "id": "images.header.x-openai-internal-codex-residency.absent",
+      "passed": true
+    },
+    {
+      "id": "images.header.x-request-id.absent",
+      "passed": true
+    },
+    {
+      "id": "models.captured",
+      "passed": true
+    },
+    {
+      "id": "models.header.accept.present",
+      "passed": true
+    },
+    {
+      "id": "models.header.authorization.present",
+      "passed": true
+    },
+    {
+      "id": "models.header.chatgpt-account-id.present",
+      "passed": true
+    },
+    {
+      "id": "models.header.openai-beta.absent",
+      "passed": true
+    },
+    {
+      "id": "models.header.originator.present",
+      "passed": true
+    },
+    {
+      "id": "models.header.session-id.absent",
+      "passed": true
+    },
+    {
+      "id": "models.header.thread-id.absent",
+      "passed": true
+    },
+    {
+      "id": "models.header.user-agent.present",
+      "passed": true
+    },
+    {
+      "id": "models.header.x-client-request-id.absent",
+      "passed": true
+    },
+    {
+      "id": "models.header.x-codex-image-turn-id.absent",
+      "passed": true
+    },
+    {
+      "id": "models.header.x-codex-installation-id.absent",
+      "passed": true
+    },
+    {
+      "id": "models.header.x-codex-routing-hint.absent",
+      "passed": true
+    },
+    {
+      "id": "models.header.x-codex-turn-metadata.absent",
+      "passed": true
+    },
+    {
+      "id": "models.header.x-codex-window-id.absent",
+      "passed": true
+    },
+    {
+      "id": "models.header.x-openai-internal-codex-residency.absent",
+      "passed": true
+    },
+    {
+      "id": "models.header.x-request-id.absent",
+      "passed": true
+    },
+    {
+      "id": "models.query.client_version",
+      "passed": true
+    },
+    {
+      "id": "normal.fake_account_only",
+      "passed": true
+    },
+    {
+      "id": "normal.fake_bearer_only",
+      "passed": true
+    },
+    {
+      "id": "responses_fast.body.priority",
+      "passed": true
+    },
+    {
+      "id": "responses_fast.captured",
+      "passed": true
+    },
+    {
+      "id": "responses_fast.compression.zstd",
+      "passed": true
+    },
+    {
+      "id": "responses_fast.header.authorization.present",
+      "passed": true
+    },
+    {
+      "id": "responses_fast.header.chatgpt-account-id.present",
+      "passed": true
+    },
+    {
+      "id": "responses_fast.header.content-encoding.present",
+      "passed": true
+    },
+    {
+      "id": "responses_fast.header.openai-beta.absent",
+      "passed": true
+    },
+    {
+      "id": "responses_fast.header.originator.present",
+      "passed": true
+    },
+    {
+      "id": "responses_fast.header.session-id.present",
+      "passed": true
+    },
+    {
+      "id": "responses_fast.header.thread-id.present",
+      "passed": true
+    },
+    {
+      "id": "responses_fast.header.user-agent.present",
+      "passed": true
+    },
+    {
+      "id": "responses_fast.header.x-client-request-id.present",
+      "passed": true
+    },
+    {
+      "id": "responses_fast.header.x-codex-installation-id.absent",
+      "passed": true
+    },
+    {
+      "id": "responses_fast.header.x-codex-routing-hint.present",
+      "passed": true
+    },
+    {
+      "id": "responses_fast.header.x-codex-turn-metadata.present",
+      "passed": true
+    },
+    {
+      "id": "responses_fast.header.x-codex-window-id.present",
+      "passed": true
+    },
+    {
+      "id": "responses_fast.header.x-openai-internal-codex-residency.absent",
+      "passed": true
+    },
+    {
+      "id": "responses_fast.header.x-request-id.absent",
+      "passed": true
+    },
+    {
+      "id": "responses_fast.routing_hint.priority",
+      "passed": true
+    },
+    {
+      "id": "responses.body.client_metadata_present",
+      "passed": true
+    },
+    {
+      "id": "responses.body.encrypted_reasoning_requested",
+      "passed": true
+    },
+    {
+      "id": "responses.body.parallel_tool_calls_true",
+      "passed": true
+    },
+    {
+      "id": "responses.body.prompt_cache_key_present",
+      "passed": true
+    },
+    {
+      "id": "responses.body.store_false",
+      "passed": true
+    },
+    {
+      "id": "responses.body.stream_true",
+      "passed": true
+    },
+    {
+      "id": "responses.captured",
+      "passed": true
+    },
+    {
+      "id": "responses.compression.zstd",
+      "passed": true
+    },
+    {
+      "id": "responses.header.authorization.present",
+      "passed": true
+    },
+    {
+      "id": "responses.header.chatgpt-account-id.present",
+      "passed": true
+    },
+    {
+      "id": "responses.header.content-encoding.present",
+      "passed": true
+    },
+    {
+      "id": "responses.header.openai-beta.absent",
+      "passed": true
+    },
+    {
+      "id": "responses.header.originator.present",
+      "passed": true
+    },
+    {
+      "id": "responses.header.session-id.present",
+      "passed": true
+    },
+    {
+      "id": "responses.header.thread-id.present",
+      "passed": true
+    },
+    {
+      "id": "responses.header.user-agent.present",
+      "passed": true
+    },
+    {
+      "id": "responses.header.x-client-request-id.present",
+      "passed": true
+    },
+    {
+      "id": "responses.header.x-codex-installation-id.absent",
+      "passed": true
+    },
+    {
+      "id": "responses.header.x-codex-routing-hint.present",
+      "passed": true
+    },
+    {
+      "id": "responses.header.x-codex-turn-metadata.present",
+      "passed": true
+    },
+    {
+      "id": "responses.header.x-codex-window-id.present",
+      "passed": true
+    },
+    {
+      "id": "responses.header.x-openai-internal-codex-residency.absent",
+      "passed": true
+    },
+    {
+      "id": "responses.header.x-request-id.absent",
+      "passed": true
+    },
+    {
+      "id": "responses.routing_hint.standard",
+      "passed": true
+    },
+    {
+      "id": "run.fast.exit_zero",
+      "passed": true
+    },
+    {
+      "id": "run.image.exit_zero",
+      "passed": true
+    },
+    {
+      "id": "run.normal.exit_zero",
+      "passed": true
+    },
+    {
+      "id": "run.usage.initialized",
+      "passed": true
+    },
+    {
+      "id": "run.web.exit_zero",
+      "passed": true
+    },
+    {
+      "id": "search.body.commands_search_query",
+      "passed": true
+    },
+    {
+      "id": "search.body.direct_caller",
+      "passed": true
+    },
+    {
+      "id": "search.body.external_web_access",
+      "passed": true
+    },
+    {
+      "id": "search.captured",
+      "passed": true
+    },
+    {
+      "id": "search.header.authorization.present",
+      "passed": true
+    },
+    {
+      "id": "search.header.chatgpt-account-id.present",
+      "passed": true
+    },
+    {
+      "id": "search.header.openai-beta.absent",
+      "passed": true
+    },
+    {
+      "id": "search.header.originator.present",
+      "passed": true
+    },
+    {
+      "id": "search.header.session-id.absent",
+      "passed": true
+    },
+    {
+      "id": "search.header.thread-id.absent",
+      "passed": true
+    },
+    {
+      "id": "search.header.user-agent.present",
+      "passed": true
+    },
+    {
+      "id": "search.header.x-client-request-id.absent",
+      "passed": true
+    },
+    {
+      "id": "search.header.x-codex-image-turn-id.absent",
+      "passed": true
+    },
+    {
+      "id": "search.header.x-codex-installation-id.absent",
+      "passed": true
+    },
+    {
+      "id": "search.header.x-codex-routing-hint.absent",
+      "passed": true
+    },
+    {
+      "id": "search.header.x-codex-turn-metadata.present",
+      "passed": true
+    },
+    {
+      "id": "search.header.x-codex-window-id.absent",
+      "passed": true
+    },
+    {
+      "id": "search.header.x-openai-internal-codex-residency.absent",
+      "passed": true
+    },
+    {
+      "id": "search.header.x-request-id.absent",
+      "passed": true
+    },
+    {
+      "id": "usage_profile.captured",
+      "passed": true
+    },
+    {
+      "id": "usage_profile.header.accept.present",
+      "passed": true
+    },
+    {
+      "id": "usage_profile.header.authorization.present",
+      "passed": true
+    },
+    {
+      "id": "usage_profile.header.chatgpt-account-id.present",
+      "passed": true
+    },
+    {
+      "id": "usage_profile.header.openai-beta.absent",
+      "passed": true
+    },
+    {
+      "id": "usage_profile.header.originator.absent",
+      "passed": true
+    },
+    {
+      "id": "usage_profile.header.session-id.absent",
+      "passed": true
+    },
+    {
+      "id": "usage_profile.header.thread-id.absent",
+      "passed": true
+    },
+    {
+      "id": "usage_profile.header.user-agent.present",
+      "passed": true
+    },
+    {
+      "id": "usage_profile.header.x-client-request-id.absent",
+      "passed": true
+    },
+    {
+      "id": "usage_profile.header.x-codex-image-turn-id.absent",
+      "passed": true
+    },
+    {
+      "id": "usage_profile.header.x-codex-installation-id.absent",
+      "passed": true
+    },
+    {
+      "id": "usage_profile.header.x-codex-routing-hint.absent",
+      "passed": true
+    },
+    {
+      "id": "usage_profile.header.x-codex-turn-metadata.absent",
+      "passed": true
+    },
+    {
+      "id": "usage_profile.header.x-codex-window-id.absent",
+      "passed": true
+    },
+    {
+      "id": "usage_profile.header.x-openai-internal-codex-residency.absent",
+      "passed": true
+    },
+    {
+      "id": "usage_profile.header.x-request-id.absent",
+      "passed": true
+    },
+    {
+      "id": "usage_reset_consume.body.exact",
+      "passed": true
+    },
+    {
+      "id": "usage_reset_consume.captured",
+      "passed": true
+    },
+    {
+      "id": "usage_reset_consume.fake_account_only",
+      "passed": true
+    },
+    {
+      "id": "usage_reset_consume.fake_bearer_only",
+      "passed": true
+    },
+    {
+      "id": "usage_reset_consume.header.accept.present",
+      "passed": true
+    },
+    {
+      "id": "usage_reset_consume.header.authorization.present",
+      "passed": true
+    },
+    {
+      "id": "usage_reset_consume.header.chatgpt-account-id.present",
+      "passed": true
+    },
+    {
+      "id": "usage_reset_consume.header.content-type.present",
+      "passed": true
+    },
+    {
+      "id": "usage_reset_consume.header.openai-beta.absent",
+      "passed": true
+    },
+    {
+      "id": "usage_reset_consume.header.originator.absent",
+      "passed": true
+    },
+    {
+      "id": "usage_reset_consume.header.session-id.absent",
+      "passed": true
+    },
+    {
+      "id": "usage_reset_consume.header.thread-id.absent",
+      "passed": true
+    },
+    {
+      "id": "usage_reset_consume.header.user-agent.present",
+      "passed": true
+    },
+    {
+      "id": "usage_reset_consume.header.x-client-request-id.absent",
+      "passed": true
+    },
+    {
+      "id": "usage_reset_consume.header.x-codex-image-turn-id.absent",
+      "passed": true
+    },
+    {
+      "id": "usage_reset_consume.header.x-codex-installation-id.absent",
+      "passed": true
+    },
+    {
+      "id": "usage_reset_consume.header.x-codex-routing-hint.absent",
+      "passed": true
+    },
+    {
+      "id": "usage_reset_consume.header.x-codex-turn-metadata.absent",
+      "passed": true
+    },
+    {
+      "id": "usage_reset_consume.header.x-codex-window-id.absent",
+      "passed": true
+    },
+    {
+      "id": "usage_reset_consume.header.x-openai-internal-codex-residency.absent",
+      "passed": true
+    },
+    {
+      "id": "usage_reset_consume.header.x-request-id.absent",
+      "passed": true
+    },
+    {
+      "id": "usage_reset.captured",
+      "passed": true
+    },
+    {
+      "id": "usage_reset.header.accept.present",
+      "passed": true
+    },
+    {
+      "id": "usage_reset.header.authorization.present",
+      "passed": true
+    },
+    {
+      "id": "usage_reset.header.chatgpt-account-id.present",
+      "passed": true
+    },
+    {
+      "id": "usage_reset.header.openai-beta.absent",
+      "passed": true
+    },
+    {
+      "id": "usage_reset.header.originator.absent",
+      "passed": true
+    },
+    {
+      "id": "usage_reset.header.session-id.absent",
+      "passed": true
+    },
+    {
+      "id": "usage_reset.header.thread-id.absent",
+      "passed": true
+    },
+    {
+      "id": "usage_reset.header.user-agent.present",
+      "passed": true
+    },
+    {
+      "id": "usage_reset.header.x-client-request-id.absent",
+      "passed": true
+    },
+    {
+      "id": "usage_reset.header.x-codex-image-turn-id.absent",
+      "passed": true
+    },
+    {
+      "id": "usage_reset.header.x-codex-installation-id.absent",
+      "passed": true
+    },
+    {
+      "id": "usage_reset.header.x-codex-routing-hint.absent",
+      "passed": true
+    },
+    {
+      "id": "usage_reset.header.x-codex-turn-metadata.absent",
+      "passed": true
+    },
+    {
+      "id": "usage_reset.header.x-codex-window-id.absent",
+      "passed": true
+    },
+    {
+      "id": "usage_reset.header.x-openai-internal-codex-residency.absent",
+      "passed": true
+    },
+    {
+      "id": "usage_reset.header.x-request-id.absent",
+      "passed": true
+    },
+    {
+      "id": "usage.captured",
+      "passed": true
+    },
+    {
+      "id": "usage.fake_account_only",
+      "passed": true
+    },
+    {
+      "id": "usage.fake_bearer_only",
+      "passed": true
+    },
+    {
+      "id": "usage.header.accept.present",
+      "passed": true
+    },
+    {
+      "id": "usage.header.authorization.present",
+      "passed": true
+    },
+    {
+      "id": "usage.header.chatgpt-account-id.present",
+      "passed": true
+    },
+    {
+      "id": "usage.header.openai-beta.absent",
+      "passed": true
+    },
+    {
+      "id": "usage.header.originator.absent",
+      "passed": true
+    },
+    {
+      "id": "usage.header.session-id.absent",
+      "passed": true
+    },
+    {
+      "id": "usage.header.thread-id.absent",
+      "passed": true
+    },
+    {
+      "id": "usage.header.user-agent.present",
+      "passed": true
+    },
+    {
+      "id": "usage.header.x-client-request-id.absent",
+      "passed": true
+    },
+    {
+      "id": "usage.header.x-codex-image-turn-id.absent",
+      "passed": true
+    },
+    {
+      "id": "usage.header.x-codex-installation-id.absent",
+      "passed": true
+    },
+    {
+      "id": "usage.header.x-codex-routing-hint.absent",
+      "passed": true
+    },
+    {
+      "id": "usage.header.x-codex-turn-metadata.absent",
+      "passed": true
+    },
+    {
+      "id": "usage.header.x-codex-window-id.absent",
+      "passed": true
+    },
+    {
+      "id": "usage.header.x-openai-internal-codex-residency.absent",
+      "passed": true
+    },
+    {
+      "id": "usage.header.x-request-id.absent",
+      "passed": true
+    },
+    {
+      "id": "web.fake_account_only",
+      "passed": true
+    },
+    {
+      "id": "web.fake_bearer_only",
+      "passed": true
+    }
+  ],
+  "endpoints": {
+    "images": {
+      "body": {
+        "background": "auto",
+        "model": "gpt-image-2",
+        "prompt": "one pixel blue whale",
+        "quality": "auto",
+        "size": "auto"
+      },
+      "headers": {
+        "names": [
+          "accept",
+          "authorization",
+          "chatgpt-account-id",
+          "content-type",
+          "originator",
+          "user-agent",
+          "x-codex-image-turn-id"
+        ],
+        "turn_metadata_shape": null,
+        "values": {
+          "accept": "*/*",
+          "content_encoding": null,
+          "content_type": "application/json",
+          "openai_beta": null,
+          "originator": "codex_exec",
+          "user_agent_template": "codex_exec/0.152.0 (Mac OS <os-version>; arm64) Apple_Terminal/<terminal-version> (codex_exec; 0.152.0)",
+          "x_codex_beta_features": null,
+          "x_codex_routing_hint": null
+        }
+      },
+      "method": "POST",
+      "path": "/backend-api/codex/images/generations"
+    },
+    "models": {
+      "body": null,
+      "headers": {
+        "names": [
+          "accept",
+          "authorization",
+          "chatgpt-account-id",
+          "originator",
+          "user-agent"
+        ],
+        "turn_metadata_shape": null,
+        "values": {
+          "accept": "*/*",
+          "content_encoding": null,
+          "content_type": null,
+          "openai_beta": null,
+          "originator": "codex_exec",
+          "user_agent_template": "codex_exec/0.152.0 (Mac OS <os-version>; arm64) Apple_Terminal/<terminal-version>",
+          "x_codex_beta_features": null,
+          "x_codex_routing_hint": null
+        }
+      },
+      "method": "GET",
+      "path": "/backend-api/codex/models?client_version=0.152.0"
+    },
+    "responses": {
+      "body": {
+        "client_metadata_shape": {
+          "root_turn_id": "string",
+          "session_id": "string",
+          "thread_id": "string",
+          "turn_id": "string",
+          "x-codex-installation-id": "string",
+          "x-codex-turn-metadata": "string",
+          "x-codex-window-id": "string"
+        },
+        "include": [
+          "reasoning.encrypted_content"
+        ],
+        "instructions_sha256": "478e8a11b180adb2659f21aba51744711f79f665039bb0bc4a13d3c051fcb76c",
+        "keys": [
+          "client_metadata",
+          "include",
+          "input",
+          "instructions",
+          "model",
+          "parallel_tool_calls",
+          "prompt_cache_key",
+          "reasoning",
+          "store",
+          "stream",
+          "text",
+          "tool_choice",
+          "tools"
+        ],
+        "model": "gpt-5.4",
+        "parallel_tool_calls": true,
+        "prompt_cache_key_present": true,
+        "service_tier": null,
+        "store": false,
+        "stream": true,
+        "tool_choice": "auto",
+        "tools": [
+          {
+            "name": "exec_command",
+            "namespace": null,
+            "type": "function"
+          },
+          {
+            "name": "write_stdin",
+            "namespace": null,
+            "type": "function"
+          },
+          {
+            "name": "list_mcp_resources",
+            "namespace": null,
+            "type": "function"
+          },
+          {
+            "name": "list_mcp_resource_templates",
+            "namespace": null,
+            "type": "function"
+          },
+          {
+            "name": "read_mcp_resource",
+            "namespace": null,
+            "type": "function"
+          },
+          {
+            "name": "request_user_input",
+            "namespace": null,
+            "type": "function"
+          },
+          {
+            "name": "apply_patch",
+            "namespace": null,
+            "type": "custom"
+          },
+          {
+            "name": "view_image",
+            "namespace": null,
+            "type": "function"
+          },
+          {
+            "name": "image_gen",
+            "namespace": null,
+            "type": "namespace"
+          },
+          {
+            "name": null,
+            "namespace": null,
+            "type": "tool_search"
+          },
+          {
+            "name": null,
+            "namespace": null,
+            "type": "web_search"
+          }
+        ]
+      },
+      "headers": {
+        "names": [
+          "accept",
+          "authorization",
+          "chatgpt-account-id",
+          "content-encoding",
+          "content-type",
+          "originator",
+          "session-id",
+          "thread-id",
+          "user-agent",
+          "x-client-request-id",
+          "x-codex-beta-features",
+          "x-codex-routing-hint",
+          "x-codex-turn-metadata",
+          "x-codex-window-id"
+        ],
+        "turn_metadata_shape": {
+          "agent_name": "string",
+          "auto_review_enabled": "boolean",
+          "context_window_id": "string",
+          "installation_id": "string",
+          "node_repl_auto_review_required": "boolean",
+          "node_repl_disabled": "boolean",
+          "request_kind": "string",
+          "root_turn_id": "string",
+          "sandbox": "string",
+          "sandbox_mode": "string",
+          "session_id": "string",
+          "thread_id": "string",
+          "thread_source": "string",
+          "turn_id": "string",
+          "turn_started_at_unix_ms": "number",
+          "window_id": "string",
+          "window_number": "number"
+        },
+        "values": {
+          "accept": "text/event-stream",
+          "content_encoding": "zstd",
+          "content_type": "application/json",
+          "openai_beta": null,
+          "originator": "codex_exec",
+          "user_agent_template": "codex_exec/0.152.0 (Mac OS <os-version>; arm64) Apple_Terminal/<terminal-version> (codex_exec; 0.152.0)",
+          "x_codex_beta_features": "remote_compaction_v2",
+          "x_codex_routing_hint": "model=gpt-5.4"
+        }
+      },
+      "method": "POST",
+      "path": "/backend-api/codex/responses"
+    },
+    "responses_fast": {
+      "body": {
+        "client_metadata_shape": {
+          "root_turn_id": "string",
+          "session_id": "string",
+          "thread_id": "string",
+          "turn_id": "string",
+          "x-codex-installation-id": "string",
+          "x-codex-turn-metadata": "string",
+          "x-codex-window-id": "string"
+        },
+        "include": [
+          "reasoning.encrypted_content"
+        ],
+        "instructions_sha256": "478e8a11b180adb2659f21aba51744711f79f665039bb0bc4a13d3c051fcb76c",
+        "keys": [
+          "client_metadata",
+          "include",
+          "input",
+          "instructions",
+          "model",
+          "parallel_tool_calls",
+          "prompt_cache_key",
+          "reasoning",
+          "service_tier",
+          "store",
+          "stream",
+          "text",
+          "tool_choice",
+          "tools"
+        ],
+        "model": "gpt-5.4",
+        "parallel_tool_calls": true,
+        "prompt_cache_key_present": true,
+        "service_tier": "priority",
+        "store": false,
+        "stream": true,
+        "tool_choice": "auto",
+        "tools": [
+          {
+            "name": "exec_command",
+            "namespace": null,
+            "type": "function"
+          },
+          {
+            "name": "write_stdin",
+            "namespace": null,
+            "type": "function"
+          },
+          {
+            "name": "list_mcp_resources",
+            "namespace": null,
+            "type": "function"
+          },
+          {
+            "name": "list_mcp_resource_templates",
+            "namespace": null,
+            "type": "function"
+          },
+          {
+            "name": "read_mcp_resource",
+            "namespace": null,
+            "type": "function"
+          },
+          {
+            "name": "request_user_input",
+            "namespace": null,
+            "type": "function"
+          },
+          {
+            "name": "apply_patch",
+            "namespace": null,
+            "type": "custom"
+          },
+          {
+            "name": "view_image",
+            "namespace": null,
+            "type": "function"
+          },
+          {
+            "name": "image_gen",
+            "namespace": null,
+            "type": "namespace"
+          },
+          {
+            "name": null,
+            "namespace": null,
+            "type": "tool_search"
+          },
+          {
+            "name": null,
+            "namespace": null,
+            "type": "web_search"
+          }
+        ]
+      },
+      "headers": {
+        "names": [
+          "accept",
+          "authorization",
+          "chatgpt-account-id",
+          "content-encoding",
+          "content-type",
+          "originator",
+          "session-id",
+          "thread-id",
+          "user-agent",
+          "x-client-request-id",
+          "x-codex-beta-features",
+          "x-codex-routing-hint",
+          "x-codex-turn-metadata",
+          "x-codex-window-id"
+        ],
+        "turn_metadata_shape": {
+          "agent_name": "string",
+          "auto_review_enabled": "boolean",
+          "context_window_id": "string",
+          "installation_id": "string",
+          "node_repl_auto_review_required": "boolean",
+          "node_repl_disabled": "boolean",
+          "request_kind": "string",
+          "root_turn_id": "string",
+          "sandbox": "string",
+          "sandbox_mode": "string",
+          "session_id": "string",
+          "thread_id": "string",
+          "thread_source": "string",
+          "turn_id": "string",
+          "turn_started_at_unix_ms": "number",
+          "window_id": "string",
+          "window_number": "number"
+        },
+        "values": {
+          "accept": "text/event-stream",
+          "content_encoding": "zstd",
+          "content_type": "application/json",
+          "openai_beta": null,
+          "originator": "codex_exec",
+          "user_agent_template": "codex_exec/0.152.0 (Mac OS <os-version>; arm64) Apple_Terminal/<terminal-version> (codex_exec; 0.152.0)",
+          "x_codex_beta_features": "remote_compaction_v2",
+          "x_codex_routing_hint": "model=gpt-5.4;tier=priority"
+        }
+      },
+      "method": "POST",
+      "path": "/backend-api/codex/responses"
+    },
+    "search": {
+      "body": {
+        "commands": {
+          "search_query": [
+            {
+              "q": "oauth wire contract"
+            }
+          ]
+        },
+        "input_shape": [
+          {
+            "content": [
+              {
+                "text": "string",
+                "type": "string"
+              }
+            ],
+            "internal_chat_message_metadata_passthrough": {
+              "content_item_kinds": [
+                "string"
+              ],
+              "create_time": "number",
+              "turn_id": "string"
+            },
+            "role": "string",
+            "type": "string"
+          }
+        ],
+        "keys": [
+          "commands",
+          "id",
+          "input",
+          "max_output_tokens",
+          "model",
+          "settings"
+        ],
+        "max_output_tokens": 10000,
+        "model": "gpt-5.4",
+        "settings": {
+          "allowed_callers": [
+            "direct"
+          ],
+          "external_web_access": true
+        }
+      },
+      "headers": {
+        "names": [
+          "accept",
+          "authorization",
+          "chatgpt-account-id",
+          "content-type",
+          "originator",
+          "user-agent",
+          "x-codex-turn-metadata"
+        ],
+        "turn_metadata_shape": {
+          "auto_review_enabled": "boolean",
+          "model": "string",
+          "node_repl_auto_review_required": "boolean",
+          "node_repl_disabled": "boolean",
+          "reasoning_effort": "string",
+          "sandbox": "string",
+          "sandbox_mode": "string",
+          "session_id": "string",
+          "thread_id": "string",
+          "thread_source": "string",
+          "turn_id": "string",
+          "turn_started_at_unix_ms": "number"
+        },
+        "values": {
+          "accept": "*/*",
+          "content_encoding": null,
+          "content_type": "application/json",
+          "openai_beta": null,
+          "originator": "codex_exec",
+          "user_agent_template": "codex_exec/0.152.0 (Mac OS <os-version>; arm64) Apple_Terminal/<terminal-version> (codex_exec; 0.152.0)",
+          "x_codex_beta_features": null,
+          "x_codex_routing_hint": null
+        }
+      },
+      "method": "POST",
+      "path": "/backend-api/codex/alpha/search"
+    },
+    "usage": {
+      "profile": {
+        "body": null,
+        "headers": {
+          "names": [
+            "accept",
+            "authorization",
+            "chatgpt-account-id",
+            "user-agent"
+          ],
+          "turn_metadata_shape": null,
+          "values": {
+            "accept": "*/*",
+            "content_encoding": null,
+            "content_type": null,
+            "openai_beta": null,
+            "originator": null,
+            "user_agent_template": "oauth-conformance/0.152.0 (Mac OS <os-version>; arm64) Apple_Terminal/<terminal-version> (oauth-conformance; 1)",
+            "x_codex_beta_features": null,
+            "x_codex_routing_hint": null
+          }
+        },
+        "method": "GET",
+        "path": "/backend-api/wham/profiles/me"
+      },
+      "reset_credit_consume": {
+        "body": {
+          "credit_id": "oauth-conformance-reset-credit",
+          "keys": [
+            "credit_id",
+            "redeem_request_id"
+          ],
+          "redeem_request_id": "oauth-conformance-reset-attempt"
+        },
+        "headers": {
+          "names": [
+            "accept",
+            "authorization",
+            "chatgpt-account-id",
+            "content-type",
+            "user-agent"
+          ],
+          "turn_metadata_shape": null,
+          "values": {
+            "accept": "*/*",
+            "content_encoding": null,
+            "content_type": "application/json",
+            "openai_beta": null,
+            "originator": null,
+            "user_agent_template": "oauth-conformance/0.152.0 (Mac OS <os-version>; arm64) Apple_Terminal/<terminal-version> (oauth-conformance; 1)",
+            "x_codex_beta_features": null,
+            "x_codex_routing_hint": null
+          }
+        },
+        "method": "POST",
+        "path": "/backend-api/wham/rate-limit-reset-credits/consume"
+      },
+      "reset_credits": {
+        "body": null,
+        "headers": {
+          "names": [
+            "accept",
+            "authorization",
+            "chatgpt-account-id",
+            "user-agent"
+          ],
+          "turn_metadata_shape": null,
+          "values": {
+            "accept": "*/*",
+            "content_encoding": null,
+            "content_type": null,
+            "openai_beta": null,
+            "originator": null,
+            "user_agent_template": "oauth-conformance/0.152.0 (Mac OS <os-version>; arm64) Apple_Terminal/<terminal-version> (oauth-conformance; 1)",
+            "x_codex_beta_features": null,
+            "x_codex_routing_hint": null
+          }
+        },
+        "method": "GET",
+        "path": "/backend-api/wham/rate-limit-reset-credits"
+      },
+      "usage": {
+        "body": null,
+        "headers": {
+          "names": [
+            "accept",
+            "authorization",
+            "chatgpt-account-id",
+            "user-agent"
+          ],
+          "turn_metadata_shape": null,
+          "values": {
+            "accept": "*/*",
+            "content_encoding": null,
+            "content_type": null,
+            "openai_beta": null,
+            "originator": null,
+            "user_agent_template": "oauth-conformance/0.152.0 (Mac OS <os-version>; arm64) Apple_Terminal/<terminal-version> (oauth-conformance; 1)",
+            "x_codex_beta_features": null,
+            "x_codex_routing_hint": null
+          }
+        },
+        "method": "GET",
+        "path": "/backend-api/wham/usage"
+      }
+    }
+  },
+  "models": {
+    "bundled_catalog_sha256": "90380129f77cd5b354bd5de01a0eba0181f71cc1967889973f7f93963a9804da",
+    "bundled_count": 10,
+    "selected": "gpt-5.4",
+    "slugs": [
+      "gpt-5.6-sol",
+      "gpt-5.6-terra",
+      "gpt-5.6-luna",
+      "gpt-daybreak-blue-latest",
+      "gpt-daybreak-red-latest",
+      "gpt-5.5",
+      "gpt-5.4",
+      "gpt-5.4-mini",
+      "gpt-5.2",
+      "codex-auto-review"
+    ]
+  },
+  "package": {
+    "cli_version_output": "codex-cli 0.152.0",
+    "native": {
+      "architecture": "arm64",
+      "binary_sha256": "166e0593c333c1c6412cc9cea72b6e1dfc4fc79b4813da02c511a3339c9b9593",
+      "install_alias": "@openai/codex-darwin-arm64",
+      "integrity": "sha512-DOnDA6EKOs+aRytYH4ffIuUutok9ovpvCNax8aaTZvBB2bKUPjUleLrP1pk+hGarddqU1ySuvXMOfp6ufXyOVQ==",
+      "name": "@openai/codex",
+      "platform": "darwin",
+      "shasum": "6f0ab36798281ba7b4ac56f62aa92a5ea111e188",
+      "version": "0.152.0-darwin-arm64"
+    },
+    "requested_version": "0.152.0",
+    "resolved_version": "0.152.0",
+    "wrapper": {
+      "integrity": "sha512-Vx0tg/J5SbxYYGJazTtL/XySK9Dlqc5KW1MZM71NMwVci/4F1ap+FfSKPFTlrICEtOTuq3KNcWSdv9oMGdPuRw==",
+      "name": "@openai/codex",
+      "shasum": "a9f8948612ef63fd7441b0c551d8805e1213cbb9"
+    }
+  },
+  "passed": true,
+  "schema_version": 1
+}
