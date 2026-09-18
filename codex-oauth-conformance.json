@@ -772,7 +772,7 @@
           "content_type": "application/json",
           "openai_beta": null,
           "originator": "codex_exec",
-          "user_agent_template": "codex_exec/0.154.0 (Mac OS <os-version>; arm64) Apple_Terminal/<terminal-version> (codex_exec; 0.154.0)",
+          "user_agent_template": "codex_exec/0.155.0 (Mac OS <os-version>; arm64) Apple_Terminal/<terminal-version> (codex_exec; 0.155.0)",
           "x_codex_beta_features": null,
           "x_codex_routing_hint": null
         }
@@ -797,13 +797,13 @@
           "content_type": null,
           "openai_beta": null,
           "originator": "codex_exec",
-          "user_agent_template": "codex_exec/0.154.0 (Mac OS <os-version>; arm64) Apple_Terminal/<terminal-version>",
+          "user_agent_template": "codex_exec/0.155.0 (Mac OS <os-version>; arm64) Apple_Terminal/<terminal-version>",
           "x_codex_beta_features": null,
           "x_codex_routing_hint": null
         }
       },
       "method": "GET",
-      "path": "/backend-api/codex/models?client_version=0.154.0"
+      "path": "/backend-api/codex/models?client_version=0.155.0"
     },
     "responses": {
       "body": {
@@ -942,7 +942,7 @@
           "content_type": "application/json",
           "openai_beta": null,
           "originator": "codex_exec",
-          "user_agent_template": "codex_exec/0.154.0 (Mac OS <os-version>; arm64) Apple_Terminal/<terminal-version> (codex_exec; 0.154.0)",
+          "user_agent_template": "codex_exec/0.155.0 (Mac OS <os-version>; arm64) Apple_Terminal/<terminal-version> (codex_exec; 0.155.0)",
           "x_codex_beta_features": "remote_compaction_v2",
           "x_codex_routing_hint": "model=gpt-5.4"
         }
@@ -1088,7 +1088,7 @@
           "content_type": "application/json",
           "openai_beta": null,
           "originator": "codex_exec",
-          "user_agent_template": "codex_exec/0.154.0 (Mac OS <os-version>; arm64) Apple_Terminal/<terminal-version> (codex_exec; 0.154.0)",
+          "user_agent_template": "codex_exec/0.155.0 (Mac OS <os-version>; arm64) Apple_Terminal/<terminal-version> (codex_exec; 0.155.0)",
           "x_codex_beta_features": "remote_compaction_v2",
           "x_codex_routing_hint": "model=gpt-5.4;tier=priority"
         }
@@ -1172,7 +1172,7 @@
           "content_type": "application/json",
           "openai_beta": null,
           "originator": "codex_exec",
-          "user_agent_template": "codex_exec/0.154.0 (Mac OS <os-version>; arm64) Apple_Terminal/<terminal-version> (codex_exec; 0.154.0)",
+          "user_agent_template": "codex_exec/0.155.0 (Mac OS <os-version>; arm64) Apple_Terminal/<terminal-version> (codex_exec; 0.155.0)",
           "x_codex_beta_features": null,
           "x_codex_routing_hint": null
         }
@@ -1197,7 +1197,7 @@
             "content_type": null,
             "openai_beta": null,
             "originator": null,
-            "user_agent_template": "oauth-conformance/0.154.0 (Mac OS <os-version>; arm64) Apple_Terminal/<terminal-version> (oauth-conformance; 1)",
+            "user_agent_template": "oauth-conformance/0.155.0 (Mac OS <os-version>; arm64) Apple_Terminal/<terminal-version> (oauth-conformance; 1)",
             "x_codex_beta_features": null,
             "x_codex_routing_hint": null
           }
@@ -1229,7 +1229,7 @@
             "content_type": "application/json",
             "openai_beta": null,
             "originator": null,
-            "user_agent_template": "oauth-conformance/0.154.0 (Mac OS <os-version>; arm64) Apple_Terminal/<terminal-version> (oauth-conformance; 1)",
+            "user_agent_template": "oauth-conformance/0.155.0 (Mac OS <os-version>; arm64) Apple_Terminal/<terminal-version> (oauth-conformance; 1)",
             "x_codex_beta_features": null,
             "x_codex_routing_hint": null
           }
@@ -1253,7 +1253,7 @@
             "content_type": null,
             "openai_beta": null,
             "originator": null,
-            "user_agent_template": "oauth-conformance/0.154.0 (Mac OS <os-version>; arm64) Apple_Terminal/<terminal-version> (oauth-conformance; 1)",
+            "user_agent_template": "oauth-conformance/0.155.0 (Mac OS <os-version>; arm64) Apple_Terminal/<terminal-version> (oauth-conformance; 1)",
             "x_codex_beta_features": null,
             "x_codex_routing_hint": null
           }
@@ -1277,7 +1277,7 @@
             "content_type": null,
             "openai_beta": null,
             "originator": null,
-            "user_agent_template": "oauth-conformance/0.154.0 (Mac OS <os-version>; arm64) Apple_Terminal/<terminal-version> (oauth-conformance; 1)",
+            "user_agent_template": "oauth-conformance/0.155.0 (Mac OS <os-version>; arm64) Apple_Terminal/<terminal-version> (oauth-conformance; 1)",
             "x_codex_beta_features": null,
             "x_codex_routing_hint": null
           }
@@ -1288,8 +1288,8 @@
     }
   },
   "models": {
-    "bundled_catalog_sha256": "bef61f6738a1d5e9d8288db2f5b39fc0e8f75d4529a4836b8e8d8390b8ff5684",
-    "bundled_count": 11,
+    "bundled_catalog_sha256": "f0e34b4f1981eb6127ed9ee76fdf0078facffc1987d109b60942940a931548d8",
+    "bundled_count": 9,
     "selected": "gpt-5.4",
     "slugs": [
       "gpt-6-astra",
@@ -1300,29 +1300,27 @@
       "gpt-daybreak-red-latest",
       "gpt-5.5",
       "gpt-5.4",
-      "gpt-5.4-mini",
-      "gpt-5.2",
       "codex-auto-review"
     ]
   },
   "package": {
-    "cli_version_output": "codex-cli 0.154.0",
+    "cli_version_output": "codex-cli 0.155.0",
     "native": {
       "architecture": "arm64",
-      "binary_sha256": "4f85982624b3898c8991cb80c0981b2aa71070e3537046c9a95950318a95afcc",
+      "binary_sha256": "b0b14f9c1901c1ec44671094b2dc18b39e4bd8d36a6dc2302cc9d961a7e2a197",
       "install_alias": "@openai/codex-darwin-arm64",
-      "integrity": "sha512-HP/vJCH/t2hB9Kg6hotN9UglClJ6/z584fal5lEP14C9gNAgAQS4/kTQC7l5V+BA3TqwDPwINSjul28cX8AYXg==",
+      "integrity": "sha512-c0vbt2ZS6XiXq9gQkNictu7PH0deMyq/bw4Ia9bdihU1iJHuGuwC5vD4swU4xhLUKoTs4tMOHwYWKaofFZcVRg==",
       "name": "@openai/codex",
       "platform": "darwin",
-      "shasum": "b11a6629bf87f08cc2d4397137cf9358a41bf36f",
-      "version": "0.154.0-darwin-arm64"
+      "shasum": "5beeb0c627046371fcb2794841851c100b6fe0be",
+      "version": "0.155.0-darwin-arm64"
     },
-    "requested_version": "0.154.0",
-    "resolved_version": "0.154.0",
+    "requested_version": "0.155.0",
+    "resolved_version": "0.155.0",
     "wrapper": {
-      "integrity": "sha512-FV/x1OHXYv/ifjf3mXj9ThTTAWcUZN6cGIRQRhRxkKNOPuImu1WW0c8ev1vUkE9XGH90dEnYG1tBjIkxRikg0w==",
+      "integrity": "sha512-35a85Hbwy9WXkDTJumLjTcmMgpR7BMdrTloWBVGjoA+FBCh7jb3+cYp2W+3U4klqGAjAskoIvQZv7/eedmCjHA==",
       "name": "@openai/codex",
-      "shasum": "eb1ec011cca427c606ef6cd4814014e59a1c3d70"
+      "shasum": "d0feb7b169b84ee02dd9712c14eee1abe8bf0caf"
     }
   },
   "passed": true,
