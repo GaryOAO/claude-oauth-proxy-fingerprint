@@ -1,21 +1,21 @@
 {
   "schema": "claude-oauth-proxy.fingerprint-state.v1",
-  "updated_at": "2026-09-18T01:03:51.865Z",
+  "updated_at": "2026-09-18T06:46:24.229Z",
   "source": {
-    "version": "2.1.275",
+    "version": "2.1.276",
     "target": "darwin-arm64",
     "platform_package": "@anthropic-ai/claude-code-darwin-arm64",
-    "build_time": "2026-09-17T18:45:15Z",
-    "npm_integrity": "sha512-grp1KFWWZbeYEmWYs/1P8NKwEto5XkKwvs2iQga8qjIbx8IQlHHS0sq4LyVv+AN8AqE4RcieJR+p1iqzFpC7TQ==",
-    "npm_shasum": "b8fc7c32b71d81072481dce3f945651d644221a5",
-    "tarball_sha256": "c2e91a85939dd7d8596c5641a24600b4df72a03d3d343546598792b0b6affb15",
-    "binary_sha256": "1b8177fe49f2be5bacc75e89b5f88fa7454791283113ace16a453fe9171d179b",
+    "build_time": "2026-09-18T00:40:43Z",
+    "npm_integrity": "sha512-JchRlXfYFrHGjm7fTZpWzlDvaP67SSO2yx2yFQSxt/T57mC6ickpApiuvS5jHCia6qjwzgjuzWSkemfLYaxB7w==",
+    "npm_shasum": "a21584d2b775cb93350731a7b42d004fb1f92d4f",
+    "tarball_sha256": "8baa9209fe89679255e14ae5f7f1510b8bc4314e1706c8af640c7f9a6583c055",
+    "binary_sha256": "9de364db11a410d53cbbb0f6b1f18c66c90053efc9a63370072856d10db66329",
     "codesign_authority": "Developer ID Application: Anthropic PBC (Q6L2SF6YDW)",
     "codesign_team_identifier": "Q6L2SF6YDW"
   },
   "client_fingerprint": {
-    "cc_version": "2.1.275",
-    "user_agent": "claude-cli/2.1.275 (external, sdk-cli)",
+    "cc_version": "2.1.276",
+    "user_agent": "claude-cli/2.1.276 (external, sdk-cli)",
     "stainless_os": "MacOS",
     "stainless_arch": "arm64",
     "stainless_runtime": "node",
@@ -131,7 +131,7 @@
   "request_headers": {
     "v1_messages_create": {
       "Accept": "application/json",
-      "User-Agent": "claude-cli/2.1.275 (external, sdk-cli)",
+      "User-Agent": "claude-cli/2.1.276 (external, sdk-cli)",
       "x-app": "cli",
       "X-Stainless-Lang": "js",
       "X-Stainless-OS": "MacOS",
@@ -147,7 +147,7 @@
     },
     "v1_messages_stream": {
       "Accept": "application/json",
-      "User-Agent": "claude-cli/2.1.275 (external, sdk-cli)",
+      "User-Agent": "claude-cli/2.1.276 (external, sdk-cli)",
       "x-app": "cli",
       "X-Stainless-Lang": "js",
       "X-Stainless-OS": "MacOS",
@@ -166,7 +166,7 @@
       "x-cc-atis": "{opaque_bootstrap_token_when_present}",
       "anthropic-dispatch-id": "{server_dispatch_id_when_present}"
     },
-    "compat_system_prompt_billing_line": "x-anthropic-billing-header: cc_version=2.1.275; cc_entrypoint=cli; cch=00000;",
-    "plan_usage_user_agent": "claude-code/2.1.275"
+    "compat_system_prompt_billing_line": "x-anthropic-billing-header: cc_version=2.1.276; cc_entrypoint=cli; cch=00000;",
+    "plan_usage_user_agent": "claude-code/2.1.276"
   }
 }
