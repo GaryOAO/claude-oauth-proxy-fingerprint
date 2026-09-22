@@ -4,12 +4,12 @@
   "audit_mode": "subscription_oauth_fake_fixture",
   "artifact": {
     "package": "@anthropic-ai/claude-code-darwin-arm64",
-    "requested_version": "2.1.278",
-    "resolved_version": "2.1.278",
-    "npm_integrity": "sha512-Jgl//CpT1KR1N8uxAN0CmkFu3eESU7GYzPOwdGH1pCENysJqYgo2LwsIrTol+EequNMrTG3kkrNW9mIoS8eWLg==",
-    "npm_shasum": "f03a418a32a34c1574e0cc3ea6036b96720f57fe",
-    "tarball_sha256": "934a258c59e90ed6ba768d0d46502d3163607dec949845650af80e5f1228330c",
-    "binary_sha256": "bd245662fb8a0e321b3bf133e930371d6563c387527885f30b2613aef3ba14d6",
+    "requested_version": "2.1.280",
+    "resolved_version": "2.1.280",
+    "npm_integrity": "sha512-ctkNgja8Yi2kngVFPO2667k6zbtJwjQ+dOTeEp1XmzHcoDFdaee4h4WVgZllsewm/Io+pPPPSFQVdGHOtdE/1A==",
+    "npm_shasum": "1ff0c6b70def07b1913169af1e0e24ab2258aa0b",
+    "tarball_sha256": "76170ceef79015e118fdea65e3b11663342153d3559f301ab8e6a7dfecc7f4a3",
+    "binary_sha256": "387a5c5dcdbb815085edf0baf79591f9d8894efe922bceaf3d75b1b08055229d",
     "codesign_authority": "Developer ID Application: Anthropic PBC (Q6L2SF6YDW)",
     "codesign_team_identifier": "Q6L2SF6YDW",
     "platform": "darwin",
@@ -158,7 +158,7 @@
       "x-stainless-timeout"
     ],
     "fingerprint": {
-      "user_agent": "claude-cli/2.1.278 (external, sdk-cli)",
+      "user_agent": "claude-cli/2.1.280 (external, sdk-cli)",
       "stainless": {
         "arch": "arm64",
         "lang": "js",
