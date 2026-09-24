@@ -4,12 +4,12 @@
   "audit_mode": "subscription_oauth_fake_fixture",
   "artifact": {
     "package": "@anthropic-ai/claude-code-darwin-arm64",
-    "requested_version": "2.1.280",
-    "resolved_version": "2.1.280",
-    "npm_integrity": "sha512-ctkNgja8Yi2kngVFPO2667k6zbtJwjQ+dOTeEp1XmzHcoDFdaee4h4WVgZllsewm/Io+pPPPSFQVdGHOtdE/1A==",
-    "npm_shasum": "1ff0c6b70def07b1913169af1e0e24ab2258aa0b",
-    "tarball_sha256": "76170ceef79015e118fdea65e3b11663342153d3559f301ab8e6a7dfecc7f4a3",
-    "binary_sha256": "387a5c5dcdbb815085edf0baf79591f9d8894efe922bceaf3d75b1b08055229d",
+    "requested_version": "2.1.281",
+    "resolved_version": "2.1.281",
+    "npm_integrity": "sha512-rEI/YGBDX4YTfdq5w1B86NicoLgpFHGp4IrKM6sDrmUemruePSXF7ybICthHClIsRY8a/Kp7PQ6UJah1VWTbSA==",
+    "npm_shasum": "c24526f6e6dd0784f1ae0880552bb07976dcaa8c",
+    "tarball_sha256": "9e623d329e0ead19284549fe099cc71f3a7ad06c2e26b5264fe3a12fc687cd1b",
+    "binary_sha256": "a922981f6f3b55a251ef9f9dbaa0621a5f99cbcb5ca67f8a797476ccfc83f626",
     "codesign_authority": "Developer ID Application: Anthropic PBC (Q6L2SF6YDW)",
     "codesign_team_identifier": "Q6L2SF6YDW",
     "platform": "darwin",
@@ -26,6 +26,23 @@
       "user:sessions:claude_code",
       "user:mcp_servers",
       "user:file_upload"
+    ],
+    "authorize_scopes": [
+      "org:create_api_key",
+      "user:profile",
+      "user:inference",
+      "user:sessions:claude_code",
+      "user:mcp_servers",
+      "user:file_upload",
+      "user:plugins"
+    ],
+    "refresh_scopes": [
+      "user:profile",
+      "user:inference",
+      "user:sessions:claude_code",
+      "user:mcp_servers",
+      "user:file_upload",
+      "user:plugins"
     ]
   },
   "privacy_contract": {
@@ -91,6 +108,8 @@
       "subscription_scopes_safe": true,
       "authorization_code_json_post": true,
       "refresh_token_json_post": true,
+      "token_request_user_agent_extracted": true,
+      "refresh_scopes_extracted": true,
       "token_requests": {
         "authorization_code": {
           "method": "POST",
@@ -112,12 +131,12 @@
           ],
           "content_type": "application/json",
           "timeout_ms": 30000,
-          "abort_signal_supported": true,
+          "abort_signal_supported": false,
           "browser_spoof_headers_absent": true,
           "authorization_header_absent": true,
           "oauth_beta_header_absent": true
         },
-        "transport_defaults_intentionally_not_pinned": true
+        "http_client_user_agent": "axios/1.15.2"
       }
     },
     "privacy": {
@@ -136,6 +155,9 @@
       "first_party_exporter_bypasses_custom_anthropic_base_url": true
     }
   },
+  "informational_drift": [
+    "static.oauth.token_requests.refresh_token.abort_signal_supported"
+  ],
   "dynamic": {
     "path": "/v1/messages?beta=true",
     "method": "POST",
@@ -147,7 +169,9 @@
       "content-type",
       "user-agent",
       "x-app",
+      "x-claude-code-request-class",
       "x-claude-code-session-id",
+      "x-client-request-id",
       "x-stainless-arch",
       "x-stainless-lang",
       "x-stainless-os",
@@ -158,7 +182,7 @@
       "x-stainless-timeout"
     ],
     "fingerprint": {
-      "user_agent": "claude-cli/2.1.280 (external, sdk-cli)",
+      "user_agent": "claude-cli/2.1.281 (external, sdk-cli)",
       "stainless": {
         "arch": "arm64",
         "lang": "js",
@@ -187,9 +211,12 @@
         "context-management-2025-06-27",
         "prompt-caching-scope-2026-01-05",
         "effort-2025-11-24",
-        "extended-cache-ttl-2025-04-11"
+        "thinking-binding-controls-2026-08-01",
+        "extended-cache-ttl-2025-04-11",
+        "cache-diagnosis-2026-04-07"
       ],
       "observed_sorted": [
+        "cache-diagnosis-2026-04-07",
         "claude-code-20250219",
         "context-management-2025-06-27",
         "effort-2025-11-24",
@@ -197,12 +224,14 @@
         "interleaved-thinking-2025-05-14",
         "oauth-2025-04-20",
         "prompt-caching-scope-2026-01-05",
+        "thinking-binding-controls-2026-08-01",
         "thinking-token-count-2026-05-13"
       ]
     },
     "body_shape": {
       "top_level_keys": [
         "context_management",
+        "diagnostics",
         "max_tokens",
         "messages",
         "metadata",
@@ -215,8 +244,12 @@
       ],
       "model": "claude-sonnet-4-6",
       "stream": true,
-      "system_block_count": 3,
+      "system_block_count": 4,
       "system_block_keys": [
+        [
+          "text",
+          "type"
+        ],
         [
           "text",
           "type"
@@ -287,6 +320,9 @@
       "metadata_user_id_is_json_string": true,
       "metadata_required_keys_present": true,
       "billing_system_block_present": true,
+      "first_party_request_class_main": true,
+      "first_party_client_request_id": true,
+      "subscriber_cache_ttl_1h": true,
       "user_message_present": true
     }
   },
