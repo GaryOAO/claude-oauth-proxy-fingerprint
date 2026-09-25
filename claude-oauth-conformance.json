@@ -131,7 +131,7 @@
           ],
           "content_type": "application/json",
           "timeout_ms": 30000,
-          "abort_signal_supported": false,
+          "abort_signal_supported": true,
           "browser_spoof_headers_absent": true,
           "authorization_header_absent": true,
           "oauth_beta_header_absent": true
@@ -155,9 +155,7 @@
       "first_party_exporter_bypasses_custom_anthropic_base_url": true
     }
   },
-  "informational_drift": [
-    "static.oauth.token_requests.refresh_token.abort_signal_supported"
-  ],
+  "informational_drift": [],
   "dynamic": {
     "path": "/v1/messages?beta=true",
     "method": "POST",

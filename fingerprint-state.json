@@ -1,6 +1,6 @@
 {
   "schema": "claude-oauth-proxy.fingerprint-state.v1",
-  "updated_at": "2026-09-25T01:04:46.750Z",
+  "updated_at": "2026-09-25T02:16:02.131Z",
   "source": {
     "version": "2.1.282",
     "target": "darwin-arm64",
@@ -111,7 +111,7 @@
         ],
         "content_type": "application/json",
         "timeout_ms": 30000,
-        "abort_signal_supported": false,
+        "abort_signal_supported": true,
         "browser_spoof_headers_absent": true,
         "authorization_header_absent": true,
         "oauth_beta_header_absent": true
