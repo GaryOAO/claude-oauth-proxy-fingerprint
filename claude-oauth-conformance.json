@@ -4,12 +4,12 @@
   "audit_mode": "subscription_oauth_fake_fixture",
   "artifact": {
     "package": "@anthropic-ai/claude-code-darwin-arm64",
-    "requested_version": "2.1.284",
-    "resolved_version": "2.1.284",
-    "npm_integrity": "sha512-WczsKY4Bg4dlh5M2UILMHM/9xpBdDcXLulzCSE+TFIb6itI7q3kfYTIwvKOzxB557krwHEuKLgWkUiXGdojjVQ==",
-    "npm_shasum": "5e97e2e46b333b53c48295911b7bf75b4aa1e1e6",
-    "tarball_sha256": "a08ca0629e314e744d0779fb2968a5c3adcf8c889b0a9ad9fe2b5d6dd76f46a4",
-    "binary_sha256": "50a14c2f50f56668380fdda490167f1d3630d5cc18fb8aed3073c2c7ea7314fe",
+    "requested_version": "2.1.286",
+    "resolved_version": "2.1.286",
+    "npm_integrity": "sha512-QlU1+S7cNO1BKzlMJGRR/ZqdsP6c3+QAA2u9EX7dTO6HUo1/RAenn/q+mlyX60MZzTZOjPkAmTt77eYrH1IAwg==",
+    "npm_shasum": "e54f764aa62c91566dd56b41fa8c21e73a098073",
+    "tarball_sha256": "860107c77e8c63b2d81c4fbe9c5d107abd73aa5f6bbda7ab2c325ddb3dea2f32",
+    "binary_sha256": "75e3016e9d2570767b08e43a7467d4817a4f149232c169ca295f2c95fef21433",
     "codesign_authority": "Developer ID Application: Anthropic PBC (Q6L2SF6YDW)",
     "codesign_team_identifier": "Q6L2SF6YDW",
     "platform": "darwin",
@@ -53,10 +53,7 @@
       "https://browser-intake-us5-datadoghq.com/api/v2/logs",
       "https://http-intake.logs.us5.datadoghq.com/api/v2/logs"
     ],
-    "direct_nonessential_urls": [
-      "https://api.anthropic.com/api/eval/sdk-zAZezfDKGoZuXXKe",
-      "https://api.anthropic.com/api/eval-authed/sdk-zAZezfDKGoZuXXKe"
-    ],
+    "direct_nonessential_urls": [],
     "first_party_export_routing": "direct_api_anthropic_com_unless_official_staging",
     "proxy_blocking_is_defensive_only": true,
     "client_disable_env": [
@@ -149,13 +146,15 @@
       "disable_growthbook_control_present": true,
       "disable_feedback_control_present": true,
       "disable_feedback_survey_control_present": true,
-      "direct_nonessential_endpoints_recognized": true,
+      "direct_nonessential_endpoints_recognized": false,
       "known_kyc_vendor_endpoints_absent": true,
       "active_geolocation_lookup_endpoints_absent": true,
       "first_party_exporter_bypasses_custom_anthropic_base_url": true
     }
   },
-  "informational_drift": [],
+  "informational_drift": [
+    "static.privacy.direct_nonessential_endpoints_recognized"
+  ],
   "dynamic": {
     "path": "/v1/messages?beta=true",
     "method": "POST",
@@ -181,12 +180,12 @@
       "x-stainless-timeout"
     ],
     "fingerprint": {
-      "user_agent": "claude-cli/2.1.284 (external, sdk-cli)",
+      "user_agent": "claude-cli/2.1.286 (external, sdk-cli)",
       "stainless": {
         "arch": "arm64",
         "lang": "js",
         "os": "MacOS",
-        "package_version": "0.112.1",
+        "package_version": "0.127.0",
         "retry_count": "0",
         "runtime": "node",
         "runtime_version": "v26.3.0",
@@ -210,14 +209,18 @@
         "context-management-2025-06-27",
         "prompt-caching-scope-2026-01-05",
         "effort-2025-11-24",
+        "dangerous-tool-use-2026-09-03",
         "thinking-binding-controls-2026-08-01",
+        "afk-mode-2026-01-31",
         "extended-cache-ttl-2025-04-11",
         "cache-diagnosis-2026-04-07"
       ],
       "observed_sorted": [
+        "afk-mode-2026-01-31",
         "cache-diagnosis-2026-04-07",
         "claude-code-20250219",
         "context-management-2025-06-27",
+        "dangerous-tool-use-2026-09-03",
         "effort-2025-11-24",
         "extended-cache-ttl-2025-04-11",
         "interleaved-thinking-2025-05-14",
@@ -236,6 +239,7 @@
         "metadata",
         "model",
         "output_config",
+        "safeguards",
         "stream",
         "system",
         "thinking",
