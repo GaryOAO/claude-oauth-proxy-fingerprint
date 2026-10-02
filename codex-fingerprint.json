@@ -1,7 +1,7 @@
 {
   "schema": "claude-oauth-proxy.codex-fingerprint.v1",
-  "version": "0.159.3",
-  "checked_at": "2026-10-01T01:25:34.727Z",
+  "version": "0.160.0",
+  "checked_at": "2026-10-02T02:43:48.982Z",
   "originator": "codex_cli_rs",
   "originators_seen_in_binary": [
     "codex_cli_rs"
