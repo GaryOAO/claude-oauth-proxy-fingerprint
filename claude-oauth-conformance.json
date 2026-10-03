@@ -4,12 +4,12 @@
   "audit_mode": "subscription_oauth_fake_fixture",
   "artifact": {
     "package": "@anthropic-ai/claude-code-darwin-arm64",
-    "requested_version": "2.1.287",
-    "resolved_version": "2.1.287",
-    "npm_integrity": "sha512-ZQLmkEpiWd8sxUYRpQr1yZ39DyVBhrl8MUtbxe33E+z4jFPtUy+CrJXmeRRyyM+FEfvGe/2ab+E59GiSKkprRw==",
-    "npm_shasum": "7e70b5d1014162fa1dd2b4de9871360a94f9e2ae",
-    "tarball_sha256": "81f45ee02e22cf26a79ca4134f5b0b6f680fb9b5155694cd37088756ae6d9278",
-    "binary_sha256": "6eab8333fe2121553100d8f40bfada384a3e989b94f947e18ba6677a6fcb41ea",
+    "requested_version": "2.1.288",
+    "resolved_version": "2.1.288",
+    "npm_integrity": "sha512-kioqJixZJY87Dgoog1VAHxPo+5h0XrDTRFLmZzRKxfjfEGF6aKv+Zt1OqJUfeUnD3+VUr+iqemRZ5vPTg2gGeQ==",
+    "npm_shasum": "8095f7c379eeacc17c7aefd459255e053ec04795",
+    "tarball_sha256": "7cb1cbd826e6aa5ffc347e15193776c59373f840f40ec0fe3acfdcae342864da",
+    "binary_sha256": "bbe93063f7a0879a1021b2891e5c9354e5b3b98433e32efe6750f7710afed750",
     "codesign_authority": "Developer ID Application: Anthropic PBC (Q6L2SF6YDW)",
     "codesign_team_identifier": "Q6L2SF6YDW",
     "platform": "darwin",
@@ -180,12 +180,12 @@
       "x-stainless-timeout"
     ],
     "fingerprint": {
-      "user_agent": "claude-cli/2.1.287 (external, sdk-cli)",
+      "user_agent": "claude-cli/2.1.288 (external, sdk-cli)",
       "stainless": {
         "arch": "arm64",
         "lang": "js",
         "os": "MacOS",
-        "package_version": "0.127.0",
+        "package_version": "0.128.0",
         "retry_count": "0",
         "runtime": "node",
         "runtime_version": "v26.3.0",
@@ -296,7 +296,29 @@
       ],
       "billing_system_block_present": true
     },
+    "metadata_identity": {
+      "schema_version": 1,
+      "keys_ordered": [
+        "device_id",
+        "account_uuid",
+        "session_id"
+      ],
+      "assertions": {
+        "metadata_identity_json_object": true,
+        "metadata_identity_keys_ordered": true,
+        "metadata_identity_device_hex64": true,
+        "metadata_identity_account_uuid": true,
+        "metadata_identity_session_uuid": true,
+        "metadata_identity_session_matches_header": true
+      }
+    },
     "assertions": {
+      "metadata_identity_json_object": true,
+      "metadata_identity_keys_ordered": true,
+      "metadata_identity_device_hex64": true,
+      "metadata_identity_account_uuid": true,
+      "metadata_identity_session_uuid": true,
+      "metadata_identity_session_matches_header": true,
       "cli_exit_zero": true,
       "cli_fixture_result": true,
       "hello_seen": true,
@@ -330,6 +352,7 @@
     }
   },
   "safety": {
+    "fresh_installation": true,
     "real_credentials_read": false,
     "token_fixture": "fake_non_secret",
     "outbound_network": "sandbox_denied_except_127.0.0.1",
