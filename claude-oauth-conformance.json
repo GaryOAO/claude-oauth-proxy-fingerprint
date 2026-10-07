@@ -4,12 +4,12 @@
   "audit_mode": "subscription_oauth_fake_fixture",
   "artifact": {
     "package": "@anthropic-ai/claude-code-darwin-arm64",
-    "requested_version": "2.1.291",
-    "resolved_version": "2.1.291",
-    "npm_integrity": "sha512-2Qwt+MyI0g3Ysjpj8+DSLGV8aph+OnQhYYD6wU81cU+DtIcPN9hON+nVIIN18FJO6Nro8iSbBxadFFPAD2vWUA==",
-    "npm_shasum": "3e11cea93b1bdd3a33ca09ba77cb91ed08d62050",
-    "tarball_sha256": "f2cc998c15f17e19c7d303f9a112e811e9eb9ee014d01846381869785afda549",
-    "binary_sha256": "9a1d2ed6bb4421e8fc80c892c0413f293be3ee50ae3d7dda1a7622197a056690",
+    "requested_version": "2.1.292",
+    "resolved_version": "2.1.292",
+    "npm_integrity": "sha512-SBkmDQOPbQ9bqkGrzshn92ByyqQy2P7pSs/11NdMLq2VXbcQc93z+yd8Dtx4+jeAX22G7GSvQpKDyKev70Vn8Q==",
+    "npm_shasum": "c21279d2051e61940912aed381544e6a2ae729ef",
+    "tarball_sha256": "42b85b3f9003692c6a0be9df12c8d1d18c04fb597c02ce9e1f00f68038e1d851",
+    "binary_sha256": "97a01e5bc74a199e67189435d0331ea3a24eac2e07db4b76d9148c5b0386138f",
     "codesign_authority": "Developer ID Application: Anthropic PBC (Q6L2SF6YDW)",
     "codesign_team_identifier": "Q6L2SF6YDW",
     "platform": "darwin",
@@ -153,7 +153,8 @@
     }
   },
   "informational_drift": [
-    "static.privacy.direct_nonessential_endpoints_recognized"
+    "static.privacy.direct_nonessential_endpoints_recognized",
+    "dynamic.observations.hello_seen"
   ],
   "dynamic": {
     "path": "/v1/messages?beta=true",
@@ -180,7 +181,7 @@
       "x-stainless-timeout"
     ],
     "fingerprint": {
-      "user_agent": "claude-cli/2.1.291 (external, sdk-cli)",
+      "user_agent": "claude-cli/2.1.292 (external, sdk-cli)",
       "stainless": {
         "arch": "arm64",
         "lang": "js",
@@ -312,19 +313,22 @@
         "metadata_identity_session_matches_header": true
       }
     },
-    "startup_observations": {
-      "hello_seen": false
+    "observations": {
+      "hello_seen": false,
+      "hello_request_count": 0,
+      "other_auxiliary_request_count": 0
     },
     "assertions": {
+      "cli_exit_zero": true,
+      "exactly_one_messages_request": true,
+      "messages_body_json_object": true,
       "metadata_identity_json_object": true,
       "metadata_identity_keys_ordered": true,
       "metadata_identity_device_hex64": true,
       "metadata_identity_account_uuid": true,
       "metadata_identity_session_uuid": true,
       "metadata_identity_session_matches_header": true,
-      "cli_exit_zero": true,
       "cli_fixture_result": true,
-      "exactly_one_messages_request": true,
       "messages_method_post": true,
       "oauth_authorization_used": true,
       "api_key_absent": true,
